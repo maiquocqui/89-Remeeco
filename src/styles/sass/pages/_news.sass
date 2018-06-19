@@ -1,0 +1,156 @@
+.news-page
+	padding: 60px 0
+	.hot-news
+		.news-col
+			display: block
+			margin-bottom: 20px
+			figure
+				+flexbox
+				flex-wrap: wrap
+				.news-img
+					width: 190px
+					img
+						width: 100%
+				figcaption
+					width: calc(100% - 190px)
+					padding-left: 20px
+					time
+						+fs(13rem)
+						line-height: 1
+						color: darken($white,40%)
+						display: block
+						margin-bottom: 10px
+					.news-name
+						+fs(15rem)
+						line-height: 1.3
+						font-weight: 700
+						color: $main
+			&.big
+				height: calc(100% - 20px)
+				figure
+					+pos(rel,null)
+					height: 100%
+					.news-img
+						width: 100%
+						height: 100%
+						+pos(rel,null)
+						img
+							height: 100%
+							object-fit: cover
+						&:before
+							content: ''
+							+pos(abs, 50% 0 0 0)
+							z-index: 1
+							background: linear-gradient(color-rgba($black,0),color-rgba($black,0.7))
+					figcaption
+						width: 100%
+						+pos(abs, null 0 0 0)
+						z-index: 2
+						padding: 20px
+						time
+							color: $white
+						.news-name
+							+fs(20rem)
+							color: $white
+	.news-list
+		.news-col
+			display: block
+			figure
+				.news-img
+					img
+						width: 100%
+				figcaption
+					padding: 20px 0
+					time
+						display: block
+						+fs(13rem)
+						line-height: 1
+						color: darken($white,40%)
+						margin-bottom: 10px
+					.news-name
+						+fs(15rem)
+						line-height: 1.4
+						font-weight: 700
+						color: $main
+						margin-bottom: 10px
+					.news-des
+						+fs(14rem)
+						color: darken($white,60%)
+	.news-info
+		margin-bottom: 20px
+		time
+			display: block
+			line-height: 1
+			+fs(13rem)
+			margin-bottom: 10px
+			color: darken($white,40%)
+		.news-name
+			+fs(20rem)
+			line-height: 1.3
+			font-weight: 700
+			color: $main
+	.news-content
+		margin-bottom: 30px
+		.news-des
+			+fs(15rem)
+			font-style: italic
+			color: darken($white,60%)
+			margin-bottom: 30px
+
+.news-other
+	margin: 60px 0
+	padding: 20px
+	background: darken($white,5%)
+	.post-list
+		.post
+			display: block
+			margin-bottom: 15px
+			padding-bottom: 15px
+			border-bottom: 1px dashed darken($white,20%)
+			&:last-child
+				margin-bottom: 0
+				padding-bottom: 0
+				border-bottom: none
+			time
+				display: block
+				+fs(13rem)
+				color: darken($white,30%)
+				margin-bottom: 5px
+			.post-name
+				+fs(15rem)
+				font-weight: 500
+				color: $main
+			&:hover
+				.post-name
+					color: $blue
+
+.share
+	+flexbox
+	align-items: center
+	align-content: center
+	a
+		display: block
+		width: 60px
+		height: 30px
+		line-height: 30px
+		text-align: center
+		color: $white
+		+fs(18rem)
+		&.fa-twitter
+			background: $twitter
+		&.fa-facebook
+			background: $facebook
+		&.fa-google-plus
+			background: $google
+		&.fa-pinterest-p
+			background: $pinterest
+		&.fa-linkedin
+			background: $linkedin
+		&.fa-tumblr
+			background: $tumblr
+		&.fa-envelope-o
+			background: #19232d
+		+ a
+			margin-left: 5px
+		&:hover
+			filter: brightness(120%)

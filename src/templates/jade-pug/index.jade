@@ -1,0 +1,15 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Remeeco'
+	- var bodyclass = 'homepage'
+
+block css
+
+block body 
+	include _layout/header
+	main
+		.container
+			include _layout/banner
+			include _pages/ct-home
+	include _layout/footer

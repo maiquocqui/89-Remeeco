@@ -1,0 +1,76 @@
+.project-page
+	padding: 0 0 60px
+	.hot-project
+		margin-bottom: 20px
+		.project
+			display: block
+			figure
+				+flexbox
+				flex-wrap: wrap
+				background: $blue
+			.project-img
+				width: calc(66.66% - 10px)
+				img
+					width: 100%
+					+transition(all,0.5s)
+			figcaption
+				width: calc(33.33% + 10px)
+				+flexbox
+				align-items: flex-end
+				align-content: flex-end
+				flex-wrap: wrap
+				padding: 0px 20px 60px
+				.project-name
+					+fs(24rem)
+					font-weight: 500
+					text-transform: uppercase
+					margin-bottom: 10px
+					line-height: 1.2
+					color: $white
+				.project-location
+					color: #a8cce7
+					+fs(14rem)
+					margin-bottom: 10px
+				.project-des
+					+fs(15rem)
+					color: $white
+					margin-bottom: 20px
+				.project-link
+					.link
+						display: inline-block
+						line-height: 34px
+						border: 1px solid $white
+						color: $white
+						+fs(15rem)
+						text-transform: uppercase
+						padding: 0px 20px 0 40px
+						+transition(all,0.5s)
+						&:after
+							content: '\e87a'
+							font-family: 'linearicons-free'
+							margin-left: 10px
+			&:hover
+				.project-img
+					img
+						filter: brightness(120%)
+				figcaption
+					.project-link
+						.link
+							background: $white
+							color: $blue
+	.project-list
+		article
+			margin-bottom: 15px
+		.project-col
+			display: block
+			figure
+				.project-img
+					img
+						width: 100%
+				figcaption
+					padding: 15px 0
+					text-align: center
+					.project-name
+						+fs(15rem)
+						text-transform: uppercase
+

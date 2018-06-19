@@ -1,0 +1,194 @@
+header
+	.header-main
+		+pos(rel,null)
+		+media-breakpoint-down(lg)
+			&:before, &:after
+				content: ''
+				display: table
+				width: 100%
+				clear: both
+	.btn-showmenu
+		display: none
+		float: left
+		width: 36px
+		height: 36px
+		color: $white
+		background: $blue
+		text-align: center
+		margin-right: 15px
+		margin-top: 12px
+		+media-breakpoint-down(lg)
+			+flexbox
+			align-items: center
+			align-content: center
+			justify-content: center
+		.material-icons
+	.overlay
+		+pos(fix, 0 null 0 0)
+		right: 0
+		background: $black
+		opacity: 0.7
+		z-index: 800
+		display: none
+	.sitelogo
+		+flexbox
+		justify-content: center
+		align-items: center
+		height: 100px
+		+pos(abs, 0 null null 50%)
+		+transform(translateX(-50%))
+		+media-breakpoint-down(lg)
+			+pos(static,unset)
+			+transform(translateX(0))
+			float: left
+			height: 60px
+		a
+			display: block
+		img
+			+media-breakpoint-down(lg)
+				height: 40px
+	.col-right
+		+flexbox
+		align-items: center
+		align-content: center
+		+media-breakpoint-down(lg)
+			flex-wrap: wrap
+	.menu
+		+pos(rel,null)
+		+flexbox
+		justify-content: space-between
+		align-items: center
+		align-content: center
+		height: 100px
+		+media-breakpoint-down(lg)
+			height: auto
+			+pos(fix, 0 null 0 0)
+			background: #dfe8f3
+			z-index: 1000
+			width: 280px
+			flex-wrap: wrap
+			align-items: flex-start
+			align-content: flex-start
+			+transform(translateX(-100%))
+			+transition(all,0.5s)
+			&.open
+				+transform(translateX(0))
+		.menu-logo
+			display: none
+			+media-breakpoint-down(lg)
+				display: block
+				width: 100%
+				margin-bottom: 10px
+			.sitelogo
+				float: none
+				height: 100px
+				img
+					height: auto
+		.menu-leftm, .menu-right
+			width: 100%
+		.menu-right
+			+media-breakpoint-down(lg)
+				margin-bottom: 20px
+		ul.menu-link
+			+flexbox
+			flex-wrap: wrap
+			li
+				+media-breakpoint-down(lg)
+					width: 100%
+				+ li
+					margin-left: 35px
+					+media-breakpoint-down(lg)
+						margin-left: 0
+				a
+					+fs(18rem)
+					font-weight: 500
+					color: $blue
+					+media-breakpoint-down(lg)
+						display: block
+						padding: 5px 20px
+					&:hover
+						color: $red
+				&.active
+					a
+						color: $red
+	.social
+		margin-left: 35px
+		+flexbox
+		+media-breakpoint-down(lg)
+			width: auto
+			margin-left: 20px
+		a
+			display: block
+			color: $white
+			+fs(16rem)
+			width: 26px
+			height: 26px
+			line-height: 26px
+			text-align: center
+			+ a
+				margin-left: 10px
+			&.fa-facebook
+				background: $facebook
+			&.fa-youtube-play
+				background: $youtube
+	.search
+		margin-left: 10px
+		+media-breakpoint-down(lg)
+			width: 100%
+			margin-left: 0
+			padding: 0px 20px
+			margin-bottom: 20px
+		.btn-search
+			width: 26px
+			height: 26px
+			line-height: 26px
+			text-align: center
+			color: $white
+			background: darken($white,20%)
+			display: none
+		.search-wrap
+			display: none
+			+media-breakpoint-down(lg)
+				display: block
+				width: 100%
+				background: $white
+			input
+				background: $white
+				border: none
+				+fs(14rem)
+				line-height: 20px
+				padding: 8px 20px
+	.language
+		margin-left: 10px
+		+media-breakpoint-down(lg)
+			width: auto
+			margin: 0
+			float: right
+			margin-top: 17px
+		.dropdown
+			.dropdown-toggle
+				+pos(rel,null)
+				display: block
+				line-height: 26px
+				height: 26px
+				padding: 0px 10px
+				background: $white
+				+fs(12rem)
+				white-space: nowrap
+				color: darken($white,60%)
+				&:after
+					content: '\f107'
+					width: auto
+					height: auto
+					display: inline-block
+					vertical-align: middle
+					margin-left: 5px
+					border: none
+			.dropdown-menu
+				min-width: 100px
+				+bor-rad(0)
+				border: none
+				.dropdown-item
+					+fs(12rem)
+					&.active
+						background: $blue

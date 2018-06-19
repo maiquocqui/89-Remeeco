@@ -1,0 +1,164 @@
+section.breadcrumb-wrap
+	.breadcrumb-img
+		img(src="img/breadcrumb/2.jpg", alt="")
+	.breadcrumb-content
+		h3.pagename
+		ol.breadcrumb
+			li
+				a(href="#!") 
+					span Trang chủ
+			li
+				a(href="#!") 
+					span Dự án
+nav.top-category
+	ul
+		li
+			a(href="#!") Resort
+		li.active
+			a(href="#!") Office
+		li
+			a(href="#!") Nhà hàng - Khách sạn
+		li
+			a(href="#!") Chung cư
+		li
+			a(href="#!") Biệt thự - Căn hộ
+		li
+			a(href="#!") Nội thất
+section.project-page
+	.container
+		.hot-project
+			a.project(href="#!" data-toggle="modal" data-target="#project1")
+				figure
+					.project-img
+						img(src="img/project/1.jpg", alt="")
+					figcaption
+						h1.project-name Kosmo Tây Hồ - Newtatco
+						.project-location Tây Hồ Tây, phường Xuân Tảo, quận Bắc Từ Liêm, Hà Nội 
+						.project-des In hac habitasse platea dictumst. Quisque imperdiet est eget ipsum tempor interdum. Cras hendrerit imperdiet faucibus. Donec quis diam dui. Phasellus vitae neque vitae felis fringilla scelerisque eget ac lectus.
+						.project-link
+							.link XEM THÊM
+		.project-list
+			.row
+				article.col-12.col-md-6.col-lg-4
+					a.project-col(href="#!")
+						figure
+							.project-img
+								img(src="img/project/2.jpg", alt="")
+							figcaption
+								h2.project-name HH01 - Nam Cường
+				article.col-12.col-md-6.col-lg-4
+					a.project-col(href="#!")
+						figure
+							.project-img
+								img(src="img/project/3.jpg", alt="")
+							figcaption
+								h2.project-name HH01 - Nam Cường
+				article.col-12.col-md-6.col-lg-4
+					a.project-col(href="#!")
+						figure
+							.project-img
+								img(src="img/project/4.jpg", alt="")
+							figcaption
+								h2.project-name HH01 - Nam Cường
+				article.col-12.col-md-6.col-lg-4
+					a.project-col(href="#!")
+						figure
+							.project-img
+								img(src="img/project/5.jpg", alt="")
+							figcaption
+								h2.project-name HH01 - Nam Cường
+				article.col-12.col-md-6.col-lg-4
+					a.project-col(href="#!")
+						figure
+							.project-img
+								img(src="img/project/6.jpg", alt="")
+							figcaption
+								h2.project-name HH01 - Nam Cường
+				article.col-12.col-md-6.col-lg-4
+					a.project-col(href="#!")
+						figure
+							.project-img
+								img(src="img/project/7.jpg", alt="")
+							figcaption
+								h2.project-name HH01 - Nam Cường
+		.pages
+			ul.pagination
+				li.active
+					a(href="#!") 1
+				li
+					a(href="#!") 2
+				li
+					a(href="#!") 3
+				li
+					a(href="#!") 4
+
+//- MODAL
+
+#project1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='project1', aria-hidden='true')
+	.modal-dialog.modal-project(role='document')
+		.modal-content
+			.modal-header
+				.close(data-dismiss='modal', aria-label='Close') <i class="material-icons">close</i>
+			.modal-body
+				.project-detail
+					.row
+						.col-12.col-lg-8
+							.project-slide-wrap
+								.project-slide.product-slide
+									.item
+										a.img(href="img/project/1.jpg" data-fancybox="project1")
+											img(src="img/project/1.jpg", alt="")
+									.item
+										a.img(href="img/project/2.jpg" data-fancybox="project1")
+											img(src="img/project/2.jpg", alt="")
+									.item
+										a.img(href="img/project/3.jpg" data-fancybox="project1")
+											img(src="img/project/3.jpg", alt="")
+									.item
+										a.img(href="img/project/4.jpg" data-fancybox="project1")
+											img(src="img/project/4.jpg", alt="")
+									.item
+										a.img(href="img/project/3.jpg" data-fancybox="project1")
+											img(src="img/project/3.jpg", alt="")
+									.item
+										a.img(href="img/project/4.jpg" data-fancybox="project1")
+											img(src="img/project/4.jpg", alt="")
+								.project-nav.product-nav
+									.item
+										.img
+											img(src="img/project/1.jpg", alt="")
+									.item
+										.img
+											img(src="img/project/2.jpg", alt="")
+									.item
+										.img
+											img(src="img/project/3.jpg", alt="")
+									.item
+										.img
+											img(src="img/project/4.jpg", alt="")
+									.item
+										.img
+											img(src="img/project/3.jpg", alt="")
+									.item
+										.img
+											img(src="img/project/4.jpg", alt="")
+						.col-12.col-lg-4
+							.project-info
+								h3.project-name Kosmo Tây Hồ - Newtatco
+								.project-des In hac habitasse platea dictumst. Quisque imperdiet est eget ipsum tempor interdum. Cras hendrerit imperdiet faucibus. Donec quis diam dui. Phasellus vitae neque vitae felis fringilla scelerisque eget ac lectus.
+								table.project-table
+									tr
+										th Địa chỉ
+										td Tây Hồ Tây, phường Xuân Tảo, quận Bắc Từ Liêm, Hà Nội 
+									tr
+										th Chủ đầu tư
+										td Công ty TNHH MTV Ứng dụng Công nghệ mới và Du lịch Newtatco
+									tr
+										th Quy mô
+										td quy mô gồm 3 tầng hầm, 3 khối tháp độc lập với 648 căn hộ trên  tổng diện tích sàn xây dựng lên đến gần 120.000 m2
+									tr
+										th Gói thầu
+										td Tổng thầu Thiết kế và Thi công (D&B)
+									tr
+										th Giá trị hợp đồng
+										td gần 1.400 tỷ đồng

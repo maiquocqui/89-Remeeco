@@ -1,0 +1,44 @@
+.breadcrumb-wrap
+	+pos(rel,null)
+	.breadcrumb-img
+		img
+			width: 100%
+	.breadcrumb-content
+		+pos(abs, 0 null 0 0)
+		right: 0
+		+flexbox
+		flex-wrap: wrap
+		align-items: center
+		align-content: center
+		justify-content: center
+		padding: 0px 15px
+		background: linear-gradient(color-rgba(#142a4a,0)33.33%,color-rgba(#142a4a,0.5))
+		padding-top: 100px
+	.pagename
+		+fs(36rem)
+		font-weight: 300
+		color: $white
+		line-height: 1
+		margin-bottom: 10px
+		width: 100%
+		text-align: center
+	ol.breadcrumb
+		width: 100%
+		text-align: center
+		margin: 0
+		padding: 0
+		background: none
+		+bor-rad(0)
+		justify-content: center
+		li
+			color: $white
+			+ li
+				&:before
+					content: '\f0da'
+					margin: 0px 10px
+			a
+				+fs(15rem)
+				color: $white
+				font-weight: 300
+				span
+					font-weight: 300

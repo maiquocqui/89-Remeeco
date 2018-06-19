@@ -1,0 +1,85 @@
+.service-page
+	padding: 0 0 60px
+	.service-category
+		.col-12
+			&:nth-child(even)
+				.service-col
+					background: darken($white,5%)
+		.service-col
+			background: darken($white,2%)
+			height: 100%
+			.service-menu
+				+pos(rel,null)
+				.service-name
+					+fs(20rem)
+					font-weight: 500
+					text-transform: uppercase
+					color: $main
+					line-height: 30px
+					padding: 15px 20px
+					cursor: pointer
+					+pos(rel,null)
+					&:after
+						content: '\f0d7'
+						+pos(abs, 15px 20px null null)
+						line-height: 30px
+				ul.service-link
+					display: none
+					+pos(abs, 100% 0 null 0)
+					background: $white
+					border: 1px solid darken($white,10%)
+					border-top: none
+					z-index: 1
+					> li
+						border-bottom: 1px solid darken($white,10%)
+						+pos(rel,null)
+						&:last-child
+							border-bottom: none
+						> a
+							display: block
+							+fs(14rem)
+							line-height: 20px
+							padding: 10px 20px
+							color: $main
+						.service-sub
+							+pos(abs,0 null null 100%)
+							background: $white
+							width: 250px
+							display: none
+							margin-left: 1px
+							ul
+								> li
+									border-bottom: 1px solid darken($white,10%)
+									&:last-child
+										border-bottom: none
+									> a
+										display: block
+										+fs(14rem)
+										line-height: 20px
+										padding: 10px 20px
+										color: $main
+									&:hover
+										background: darken($white,8%)
+										> a
+											color: $red
+											font-weight: 500
+						&:hover
+							background: darken($white,8%)
+							> a
+								color: $red
+								font-weight: 500
+							.service-sub
+								display: block
+				&:hover
+					.service-name
+						color: $blue
+					ul.service-link
+						display: block
+			figure
+				.service-img
+					img
+						width: 100%
+				figcaption
+					padding: 20px
+					.service-des
+						+fs(14rem)

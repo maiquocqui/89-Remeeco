@@ -1,0 +1,61 @@
+.top-nav
+	background: darken($white,5%)
+	ul
+		+flexbox
+		justify-content: center
+		li
+			a
+				display: block
+				+fs(16rem)
+				color: $main
+				font-weight: 500
+				text-transform: uppercase
+				line-height: 20px
+				padding: 20px 20px
+			&:hover
+				a
+					color: $blue
+			&.active
+				a
+					background: $blue
+					color: $white
+
+.top-category
+	padding: 30px 0
+	ul
+		+flexbox
+		justify-content: center
+		li
+			padding: 0px 7px
+			a
+				display: block
+				+fs(15rem)
+				color: $blue
+				line-height: 34px
+				padding: 0px 20px
+				border: 1px solid $blue
+			&.active
+				a
+					background: $blue
+					color: $white
+
+.pages
+	+flexbox
+	justify-content: center
+	ul
+		+flexbox
+		justify-content: center
+		li
+			padding: 0px 10px
+			a, span
+				+fs(20rem)
+				color: $main
+				font-weight: 500
+				border-bottom: 1px solid transparent
+				text-align: center
+				display: block
+				width: 20px
+			&.active
+				a, span
+					color: $blue
+					border-bottom-color: $blue
